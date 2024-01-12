@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/css/styleregister.css}">
+
+</head>
+<body>
+<form action="register" method="post">
+<h1>Welcome to Tub_hub Register</h1>
+		<table>
+
+			<tr>
+				<td><label>Username :</label></td>
+				<td><input type="username" name="username"></td>
+			</tr>
+
+			<tr>
+				<td><label>Email:</label></td>
+				<td><input type="email" name="email"></td>
+			</tr>
+
+			<tr>
+				<td><label>Password:</label></td>
+				<td><input type="password" name="password"></td>
+			</tr>
+
+			<tr>
+				<td><label>Gender:</label></td>
+				<td>M<input type="radio" name="gender" value="male" />
+				<td>F<input type="radio" name="gender" value="femal" />
+				<td>O<input type="radio" name="gender" value="other" />
+			</tr>
+
+			<tr>
+				<td><label>Role:</label></td>
+				<td>Admin<input type="radio" name="role" value="admin" />
+				<td>Customer<input type="radio" name="role" value="customer" />
+			</tr>
+			<tr>
+				<td><label>Address:</label></td>
+				<td><textarea name="address"></textarea></td>
+
+			</tr>
+			<tr>
+				<td><input type="submit" value="register"></td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>
